@@ -1,0 +1,50 @@
+/* Basic styling */
+.card {
+    border-color: #e40000;
+  }
+
+  .card-body {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Input groups */
+  .input-group {
+    margin-bottom: 1rem;
+  }
+
+  .input-group-text {
+    background-color: #eee;
+    border-color: #ddd;
+    padding: 0.5rem;
+  }
+
+  .form-control {
+    border-color: #ddd;
+  }
+
+  .form-control:focus {
+    border-color: #999;
+  }
+
+  .invalid-feedback {
+    color: #dc3545;
+    display: block;
+  }
+
+  /* Button */
+  .btn-success {
+    background-color: #fb4e30;
+    border-color: #28a745;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .btn-success:hover {
+    background-color: #207b3c;
+    border-color: #207b3c;
+  }

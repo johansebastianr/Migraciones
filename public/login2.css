@@ -1,0 +1,97 @@
+/* public/login2.css */
+
+/* Estilos para el contenedor principal */
+.container {
+    min-height: 100vh;
+    display: block;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Estilos para los títulos */
+h1 {
+    color: #333;
+    font-weight: 700;
+}
+h2 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* Estilos para los botones */
+.btn-primary {
+    background-color: #3490dc;
+    border-color: #3490dc;
+    transition: background-color 0.3s, border-color 0.3s;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #14446b;
+    border-color: #2779bd;
+}
+
+.btn-outline-light {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #262626;
+}
+
+/* Estilos para los inputs */
+.input-group-text {
+    background-color: #f8f9fa;
+    border-color: #ced4da;
+}
+
+.input-group .form-control {
+    border-left: 0;
+    box-shadow: none;
+}
+
+.input-group .form-control:focus {
+    border-color: #3490dc;
+    box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+}
+
+/* Estilos para los mensajes de error */
+.invalid-feedback {
+    display: block;
+}
+
+/* Estilo del enlace de recuperación de contraseña */
+.btn-link {
+    color: #3490dc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.btn-link:hover {
+    color: #2779bd;
+    text-decoration: underline;
+}
+
+/* Estilos para asegurar un buen diseño en diferentes tamaños de pantalla */
+@media (min-width: 768px) {
+    .card {
+        max-width: 700px;
+        margin: auto;
+    }
+}

@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: -10%;
+  left: 48%;
+  transform: translateY(-50%);
+  background: linear-gradient(-45deg, #262626 0%, #262626 100%);
+  transition: 1.8s ease-in-out;
+  border-radius: 50%;
+  z-index: 6;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 1000;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #000000;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 300;
+}
+
+nav a:hover {
+  color: #F28705;
+}
+
+.forms-container {
+  display: flex;
+  width: 100%;
+}
+
+.signin-signup, .right-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  width: 100%;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #444;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  font-size: 1.1rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #3D3D3D;
+}
+
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.social-text {
+  padding: 0.7rem 0;
+  font-size: 1.13rem;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+}
+
+.btn {
+  width: 150px;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.btn-social {
+  border-radius: 100%;
+  display: inline-flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.mx-1 {
+  margin-right: 0.25rem !important;
+  margin-left: 0.25rem !important;
+}
+
+.btn-outline-light {
+  --bs-btn-color: #f8f9fa;
+  --bs-btn-border-color: #f8f9fa;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #f8f9fa;
+  --bs-btn-hover-border-color: #f8f9fa;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.right-panel .content {
+  color: #444;
+}
+
+.right-panel .image {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.right-panel h3 {
+  font-size: 1.8rem;
+}
+
+.right-panel p {
+  font-size: 1rem;
+}
+
+.right-panel button {
+  border: 1px solid #333;
+  border-radius: 49px;
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  cursor: pointer;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.right-panel button:hover {
+  background-color: #333;
+  color: #fff;
+}
